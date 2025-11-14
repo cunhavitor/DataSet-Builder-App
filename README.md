@@ -1,7 +1,7 @@
-## DataSet-Builder-App
+# DataSet-Builder-App
 Aplicação para criar dataset robusto e pré-processado para treinar CVAE - detectar defeitos em latas
 
-#1. Nome e Descrição curta
+## 1. Nome e Descrição curta
 
  - Nome: Dataset Builder / Calibrator
 
@@ -9,7 +9,7 @@ Aplicação para criar dataset robusto e pré-processado para treinar CVAE - det
 
  - Aplicação para captar, validar e organizar imagens de latas para treinar modelos de detecção de defeitos.
 
-#2. Problema que resolve
+## 2. Problema que resolve
 
  - Scores dos modelos variam demasiado porque o dataset não é consistente.
 
@@ -17,11 +17,11 @@ Aplicação para criar dataset robusto e pré-processado para treinar CVAE - det
 
  - É trabalhoso e confuso organizar 3k–5k imagens manualmente.
 
-#3. Objetivo principal
+## 3. Objetivo principal
 
  - Garantir que cada imagem de lata usada no treino passou por um pipeline controlado de normalização, validação e etiquetagem, produzindo um dataset limpo e reprodutível.
 
-#4. Resultados que a app tem de entregar (outcomes)
+## 4. Resultados que a app tem de entregar (outcomes)
 
  - Gerar um conjunto de imagens de latas normalizadas (mesmo tamanho, mesma máscara, mesma rotação).
 
@@ -35,7 +35,7 @@ Aplicação para criar dataset robusto e pré-processado para treinar CVAE - det
 
  - Importar parâmetros de calibração vindos do Colab (thresholds, percentis) e guardá-los para uso na app de inspeção.
 
-#5. Escopo IN (o que está incluído)
+## 5. Escopo IN (o que está incluído)
 
  - Carregamento de imagens de folha completa.
 
@@ -49,7 +49,7 @@ Aplicação para criar dataset robusto e pré-processado para treinar CVAE - det
 
  - Exportar dataset para treino e importar calibrações.
 
-#6. Escopo OUT (explicitamente fora)
+## 6. Escopo OUT (explicitamente fora)
 
  - Não vai treinar modelos (CVAE, Padim, etc.) localmente – treino é no Colab.
 
@@ -59,7 +59,7 @@ Aplicação para criar dataset robusto e pré-processado para treinar CVAE - det
 
  - Não vai fazer análise estatística avançada (apenas o necessário para calibração básica).
 
-#7. Utilizador alvo e contexto
+## 7. Utilizador alvo e contexto
 
  - Utilizador: Vitor (ou operadores específicos) a correr a app num PC/laptop ligado ao Pi ou a uma pasta partilhada.
 
