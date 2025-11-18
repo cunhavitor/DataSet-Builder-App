@@ -1,0 +1,47 @@
+{
+  "paths": {
+    "input": "C:/Users/cunhav/OneDrive - Sonoco Products Company/Documentos/Projetos/Camera Vis\u00e3o Lito/DataSetBuilder/data/test_input_sheets",
+    "raw": "data/raw_sheets",
+    "normalized": "data/normalized_sheets",
+    "cans": "data/cans",
+    "metadata": "data/metadata"
+  },
+  "session": {
+    "sku": "SKU_TEST",
+    "operator": "Operador",
+    "notes": ""
+  },
+  "detector": {
+    "weights": "models/weights/can_detector.pt",
+    "conf": 0.25,
+    "iou": 0.45,
+    "device": "cpu"
+  },
+  "normalize": {
+    "size": 512,
+    "target_v": 110.0,
+    "clahe_clip": 5.0,
+    "clahe_tile": [
+      4,
+      4
+    ]
+  },
+  "preprocess": {
+    "canny_low": 30,
+    "canny_high": 140,
+    "gauss": 5,
+    "dilate": 2,
+    "close": 2,
+    "target_area": 10100.0,
+    "target_tol": 0.15,
+    "center_w": 0.8,
+    "area_w": 0.2,
+    "mask_pad": 1
+  },
+  "tests": {
+    "max_lab_delta_L": 15.0,
+    "max_lab_delta_ab": 60.0,
+    "target_brightness": 30.0,
+    "max_brightness_delta": 60.0
+  }
+}

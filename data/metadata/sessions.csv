@@ -1,0 +1,5 @@
+session_id,created_at,sku,operator,notes,num_sheets,num_sheets_pass,num_sheets_fail
+session_0001,2025-11-18 10:16:44,SKU_TEST,Operador,,0,0,0
+session_0003,2025-11-18 10:25:55,SKU_TEST,Operador,,0,0,0
+session_0007,2025-11-18 10:32:56,SKU_TEST,Operador,,0,0,0
+session_0009,2025-11-18 10:34:12,SKU_TEST,Operador,,0,0,0
